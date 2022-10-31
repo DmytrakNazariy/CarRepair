@@ -1,0 +1,27 @@
+.photo {
+  @include adaptiveValue("padding-top", 114, 25);
+  @include adaptiveValue("padding-bottom", 260, 30);
+  background: url(../img/photo/photo-bg.jpg) center center / cover no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width:$mobile) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    @include adaptiveValue("font-size", 36, 25);
+    line-height: 1.17;
+    color: $white;
+    max-width: rem(411);
+
+    @media (max-width:$mobile) {
+      text-align: center;
+    }
+  }
+
+}

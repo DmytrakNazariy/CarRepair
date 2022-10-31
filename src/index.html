@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Car Repair"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__box">
+						<h1 class="hero__title">Top notch service is our main auto
+							motive</h1>
+						<a data-goto-header data-goto=".form-appointment" href="#" class="hero__btn btn">Make an Appointment
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.00008 10.9334L5.06008 9.99344L8.78008 6.26677L0.666748 6.26677L0.666748 4.93344L8.78008 4.93344L5.06008 1.20677L6.00008 0.266775L11.3334 5.60011L6.00008 10.9334Z"
+									fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<img class="hero-bg" src="@img/hero/hero-bg.jpg" alt="">
+			</section>
+			<section class="about">
+				<div class="about__wrapper">
+					<div class="about__container">
+						<div class="about__content">
+							<div class="about__header section-header">
+								<div class="about__suptitle section-header__suptitle">WHO WE ARE</div>
+								<h2 class="about__title section-header__title">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+							</div>
+							<div class="about__text">Ut enim ad minima veniam, quis
+								nostrum exercitationem ullam
+								corporis suscipit
+								laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea
+								voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+								nulla pariatur.</div>
+							<div class="about__image-ibg">
+								<img data-src="@img/about/about-main-bg.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="promise">
+				<div class="promise__container">
+					<div data-aos="fade-down" data-aos-duration="1000" class="promise__header section-header">
+						<div class="promise__suptitle section-header__suptitle">OUR PROMISE TO YOU</div>
+						<h2 class="promise__title section-header__title">Sed perspiciatis omnis iste natus</h2>
+					</div>
+					<div class="promise__items">
+						<div data-aos="fade-up" data-aos-duration="1000" class="promise__item item-promise">
+							<div class="item-promise__img">
+								<img src="@img/promise/quality-service.png" alt="quality-service-img">
+							</div>
+							<div class="item-promise__content">
+								<h6 class="item-promise__title">Quality service. Everytime.</h6>
+								<div class="item-promise__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000" class="promise__item item-promise">
+							<div class="item-promise__img">
+								<img src="@img/promise/certified-pros.png" alt="certified-pros-img">
+							</div>
+							<div class="item-promise__content">
+								<h6 class="item-promise__title">Services by certified pros</h6>
+								<div class="item-promise__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+									non numquam eius modi tempora incidunt.</div>
+							</div>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000" class="promise__item item-promise">
+							<div class="item-promise__img">
+								<img src="@img/promise/team.png" alt="team-img">
+							</div>
+							<div class="item-promise__content">
+								<h6 class="item-promise__title">Real people. Honest work.</h6>
+								<div class="item-promise__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+									quam nihil molestiae consequatur illum.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-aos="zoom-in" data-aos-duration="1500" class="photo">
+				<div class="photo__container">
+					<h3 class="photo__title">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div data-aos="fade-down" data-aos-duration="1000" class="services__header section-header">
+						<div class="services__suptitle section-header__suptitle">Our Services</div>
+						<h2 class="services__title section-header__title">Sed perspiciatis omnis iste natus</h2>
+					</div>
+					<div class="services__items">
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/inspections.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Multi Point Inspections</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/repair.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Auto Repair</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/maintenance.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Auto Maintenance</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/tires.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Tires</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/warranty.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Service Warranty</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+						<div data-aos="flip-left" data-aos-duration="1000" class="services__item item-services">
+							<div class="item-services__content">
+								<div class="item-services__image">
+									<img src="@img/services/shop.svg" alt="">
+								</div>
+								<h6 class="item-services__title">Shop Online</h6>
+								<div class="item-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+									blanditiis praesentium corrupti quos dolores et quas.</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="services__btn btn">LEARN MORE
+						<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M6.00008 10.9334L5.06008 9.99344L8.78008 6.26677L0.666748 6.26677L0.666748 4.93344L8.78008 4.93344L5.06008 1.20677L6.00008 0.266775L11.3334 5.60011L6.00008 10.9334Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+			</section>
+			<div class="appointment-wrapper">
+				<section class="appointment">
+					<div class="appointment__container">
+						<div class="appointment__content">
+							<form data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-dev
+								data-popup-message="#formMessage" class="appointment__form form-appointment" action="#">
+								<div class="form-appointment__content">
+									<h3 class="form-appointment__title">Make an appointment</h3>
+									<div class="form-appointment__inputs">
+										<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name"
+											class="input" required>
+										<input autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="Email"
+											class="input" required>
+										<input autocomplete="off" type="tel" name="form[]" data-error="Error" placeholder="Phone Number"
+											class="input" required>
+										<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="City"
+											class="input" required>
+									</div>
+									<textarea class="input" name="textarea" id="textarea"
+										placeholder="Tell us about the car needing service(s)" required></textarea>
+									<button type="submit" class="form-appointment__btn btn">Make an Appointment
+										<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.00008 10.9334L5.06008 9.99344L8.78008 6.26677L0.666748 6.26677L0.666748 4.93344L8.78008 4.93344L5.06008 1.20677L6.00008 0.266775L11.3334 5.60011L6.00008 10.9334Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</form>
+							<div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="appointment__info">
+								<h4 class="appointment__info-title">Maxime placeat facere possimus omnis </h4>
+								<div class="appointment__info-number">17k</div>
+								<div class="appointment__info-subtitle">customers served (and counting)</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="gallery">
+				<div class="gallery__wrapper">
+					<div class="gallery__container">
+						<div class="gallery__content">
+							<div data-aos="fade-down" data-aos-duration="1000" class="gallery__header section-header">
+								<div class="gallery__suptitle section-header__suptitle">GALLERY & LIVE STREAMS</div>
+								<h2 class="gallery__title section-header__title">Check out our hard workers</h2>
+							</div>
+							<div data-tabs data-tabs-animate="550" class="tabs">
+								<nav data-aos="fade-left" data-aos-duration="1000" data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Gallery</button>
+									<button type="button" class="tabs__title">Live stream: Bay 1</button>
+									<button type="button" class="tabs__title">Live stream: Bay 2</button>
+									<button type="button" class="tabs__title">Live stream: Bay 3</button>
+								</nav>
+								<div class="tabs__indicator"></div>
+								<div data-aos="fade-right" data-aos-duration="1000" data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										<div class="gallery__image-ibg">
+											<img data-src="@img/gallery/gallery01.jpg" alt="">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="gallery__image-ibg">
+											<img data-src="@img/gallery/gallery02.jpg" alt="">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="gallery__image-ibg">
+											<img data-src="@img/gallery/gallery01.jpg" alt="">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="gallery__image-ibg">
+											<img data-src="@img/gallery/gallery02.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimony">
+				<div class="testimony__container">
+					<div class="testimony__content">
+						<div data-aos="fade-up-right" data-aos-duration="1000" class="testimony__header section-header">
+							<div class="testimony__suptitle section-header__suptitle">Our CUSTOMERS</div>
+							<h2 class="testimony__title section-header__title">Illum qui dolorem eum quo voluptas ut distinctio</h2>
+						</div>
+						<div data-aos="fade-up-left" data-aos-duration="1000" class="testimony__item item-testimony">
+							<div class="item-testimony__content">
+								<div class="item-testimony__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea
+									exercitation ullamco cillum ut enim dolore.”</div>
+								<div class="item-testimony__author">
+									<div class="item-testimony__image">
+										<img src="@img/testimony/testimony01.png" alt="">
+									</div>
+									<div class="item-testimony__name">Cullen Bohannon</div>
+								</div>
+							</div>
+						</div>
+						<div data-aos="fade-up-left" data-aos-duration="1000" class="testimony__item item-testimony">
+							<div class="item-testimony__content">
+								<div class="item-testimony__text">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+									accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+									quasi ipsam voluptatem aspernatur.”</div>
+								<div class="item-testimony__author">
+									<div class="item-testimony__image">
+										<img src="@img/testimony/testimony02.png" alt="">
+									</div>
+									<div class="item-testimony__name">Jennifer Thomas</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="impact">
+				<div class="impact__content">
+					<div class="impact__container">
+						<div data-aos="fade-down" data-aos-duration="1000" class="impact__header section-header">
+							<div class="impact__suptitle section-header__suptitle">OUR IMPACT</div>
+							<h2 class="impact__title section-header__title">Nemo enim ipsam voluptatem quia voluptas</h2>
+						</div>
+						<div class="impact__items">
+							<div data-aos="fade-right" data-aos-duration="1000" class="impact__item item-impact">
+								<div class="item-impact__image">
+									<img src="@img/impact/impact01.svg" alt="">
+								</div>
+								<div class="item-impact__content">
+									<div class="item-impact__number">16k+</div>
+									<div class="item-impact__text">Oil changes</div>
+								</div>
+							</div>
+							<div data-aos="fade-right" data-aos-duration="1000" class="impact__item item-impact">
+								<div class="item-impact__image">
+									<img src="@img/impact/impact02.svg" alt="">
+								</div>
+								<div class="item-impact__content">
+									<div class="item-impact__number">13k+</div>
+									<div class="item-impact__text">Transmission repairs</div>
+								</div>
+							</div>
+							<div data-aos="fade-left" data-aos-duration="1000" class="impact__item item-impact">
+								<div class="item-impact__image">
+									<img src="@img/impact/impact03.svg" alt="">
+								</div>
+								<div class="item-impact__content">
+									<div class="item-impact__number">15k+</div>
+									<div class="item-impact__text">Alignments made</div>
+								</div>
+							</div>
+							<div data-aos="fade-left" data-aos-duration="1000" class="impact__item item-impact">
+								<div class="item-impact__image">
+									<img src="@img/impact/impact04.svg" alt="">
+								</div>
+								<div class="item-impact__content">
+									<div class="item-impact__number">11,500+</div>
+									<div class="item-impact__text">Engines repaired</div>
+								</div>
+							</div>
+						</div>
+						<div class="impact__appointment appointment-impact">
+							<h5 class="appointment-impact__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+							</h5>
+							<a data-goto-header data-goto=".form-appointment" href="#" class="appointment-impact__btn btn">Make an
+								Appointment
+								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.00008 10.9334L5.06008 9.99344L8.78008 6.26677L0.666748 6.26677L0.666748 4.93344L8.78008 4.93344L5.06008 1.20677L6.00008 0.266775L11.3334 5.60011L6.00008 10.9334Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

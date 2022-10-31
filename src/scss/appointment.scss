@@ -1,0 +1,96 @@
+.appointment-wrapper {
+  @include adaptiveValue("padding-top", 60, 30);
+}
+
+.appointment {
+  background-color: $blue;
+  @include adaptiveValue("padding-top", 130, 30);
+  @include adaptiveValue("padding-bottom", 210, 100);
+
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width:$tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__info {
+    align-self: center;
+    display: grid;
+    @include adaptiveValue("gap", 46, 23);
+    max-width: rem(324);
+    justify-items: center;
+    font-weight: 900;
+
+    @media (max-width:$tablet) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+
+  &__info-title {
+    @include adaptiveValue("font-size", 30, 25);
+    line-height: 1.2;
+    text-align: center;
+    color: $white;
+  }
+
+  &__info-number {
+    @include adaptiveValue("font-size", 96, 45);
+    color: $red;
+  }
+
+  &__info-subtitle {
+    font-size: rem(19);
+    line-height: 1.37;
+    color: $white;
+  }
+}
+
+.form-appointment {
+  background-color: $white;
+  @include adaptiveValue("padding-top", 76, 25);
+  @include adaptiveValue("padding-bottom", 76, 25);
+  @include adaptiveValue("padding-left", 57, 15);
+  @include adaptiveValue("padding-right", 57, 15);
+
+  &__content {
+    display: grid;
+  }
+
+  &__title {
+    font-weight: 900;
+    @include adaptiveValue("font-size", 36, 25);
+    line-height: 1.17;
+    text-align: center;
+    color: $blue;
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 43, 20);
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    gap: rem(22);
+
+    @media (min-width:$mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(22);
+    }
+  }
+
+  &__btn {
+    justify-self: center;
+
+    @media (min-width:$mobile) {
+      justify-self: end;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.impact {
+  @include adaptiveValue("padding-top", 60, 30);
+  padding-bottom: 125px;
+
+  &__content {
+    background: url(../img/impact/impact-bg.jpg) center center / cover no-repeat;
+    @include adaptiveValue("padding-top", 112, 30);
+
+  }
+
+  &__container {}
+
+  &__header {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 80, 40);
+    }
+  }
+
+  &__suptitle {
+    color: #d5d5d5;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__items {
+    display: grid;
+    gap: rem(24);
+
+    @media (min-width:$tablet) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width:$mobileSmall) and (max-width:$tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {}
+
+  &__appointment {}
+}
+
+.item-impact {
+  display: flex;
+  gap: rem(11);
+  align-items: center;
+
+  &__image {
+    max-height: rem(76);
+
+    img {
+      width: rem(76);
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: rem(3);
+  }
+
+  &__number {
+    font-weight: 900;
+    font-size: rem(36);
+    line-height: 1.17;
+    color: $red;
+  }
+
+  &__text {
+    color: #f5f5f5;
+  }
+}
+
+.appointment-impact {
+  background-color: $white;
+  @include adaptiveValue("padding-top", 45, 15);
+  @include adaptiveValue("padding-bottom", 45, 15);
+  @include adaptiveValue("padding-left", 70, 20);
+  @include adaptiveValue("padding-right", 70, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50%);
+
+  @media (max-width:$tablet) {
+    flex-direction: column;
+    gap: rem(20);
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 900;
+    @include adaptiveValue("font-size", 24, 20);
+    line-height: 1.25;
+    color: $blue;
+    max-width: rem(562);
+  }
+
+  &__btn {}
+}

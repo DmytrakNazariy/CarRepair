@@ -1,0 +1,21 @@
+.gallery {
+  @include adaptiveValue("padding-bottom", 60, 30);
+
+  &__wrapper {
+    @include adaptiveValue("margin-top", -80, -40);
+  }
+
+  &__content {
+    @include adaptiveValue("padding-top", 100, 20);
+    @include adaptiveValue("padding-bottom", 100, 20);
+    @include adaptiveValue("padding-left", 87, 15);
+    @include adaptiveValue("padding-right", 87, 15);
+    background-color: $white;
+    display: grid;
+    @include adaptiveValue("gap", 55, 30);
+  }
+
+  &__image-ibg {
+    padding-bottom: percent(480, 846);
+  }
+}

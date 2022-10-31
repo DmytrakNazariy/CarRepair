@@ -1,0 +1,41 @@
+.about {
+  @include adaptiveValue("padding-bottom", 180, 50);
+
+  &__wrapper {
+    @include adaptiveValue("margin-top", -80, -40);
+  }
+
+  &__container {}
+
+  &__content {
+    @include adaptiveValue("padding-top", 100, 20);
+    @include adaptiveValue("padding-left", 87, 15);
+    @include adaptiveValue("padding-right", 87, 15);
+    background-color: $white;
+  }
+
+  &__header {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 36, 18);
+    }
+  }
+
+  &__suptitle {}
+
+  &__title {}
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: rem(-74);
+
+      @media (max-width:$mobile) {
+        @include adaptiveValue("margin-bottom", -74, -25);
+      }
+    }
+  }
+
+  &__image-ibg {
+    padding-bottom: percent(420, 846);
+    transform: translateY(28.5%);
+  }
+}

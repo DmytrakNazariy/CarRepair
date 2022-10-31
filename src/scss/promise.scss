@@ -1,0 +1,62 @@
+.promise {
+  @include adaptiveValue("padding-top", 50, 25);
+  @include adaptiveValue("padding-bottom", 60, 30);
+
+  &__container {
+    display: grid;
+    @include adaptiveValue("gap", 68, 34);
+  }
+
+  &__header {}
+
+  &__suptitle {}
+
+  &__title {}
+
+  &__items {
+    gap: rem(24);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width:$tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {}
+}
+
+.item-promise {
+  display: flex;
+  @include adaptiveValue("gap", 23, 15);
+  width: 100%;
+
+  @media (min-width:$mobile) and (max-width:$tablet) {
+    width: calc(50% - 24px);
+  }
+
+  &__img {
+    align-self: flex-start;
+
+    img {
+      width: rem(63);
+      height: rem(63);
+    }
+  }
+
+  &__content {
+    display: grid;
+    @include adaptiveValue("gap", 20, 5);
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: rem(19);
+    line-height: 1.37;
+    color: $blue;
+  }
+
+  &__text {}
+}

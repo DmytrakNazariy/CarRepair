@@ -1,0 +1,106 @@
+// Заголовки, общие БЄМ блоки и проче...
+//Button
+.btn {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(12);
+  line-height: 2;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 2px;
+  padding: 12px 49px 12px 19px;
+  background-color: $red;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::after {
+        transform: translateX(100%);
+      }
+
+      svg {
+        right: 8px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: em(211, 58.9);
+      background-color: $redLight;
+      bottom: 0;
+      right: 0;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+      transition: all 0.3s ease 0s;
+      height: 100%;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      transition: all 0.3s ease 0s;
+
+      & path {
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+}
+
+//Section-title
+.section-header {
+  display: grid;
+  @include adaptiveValue("gap", 33, 15);
+  max-width: rem(583);
+
+  &__suptitle {
+    font-weight: 700;
+    font-size: rem(12);
+    display: flex;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: $mainColor;
+    padding-left: rem(40);
+    position: relative;
+
+    &::before {
+      content: url(../img/section-header-mark.svg);
+      position: absolute;
+      top: rem(-8);
+      left: 0;
+      width: rem(24);
+      height: rem(24);
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    @include adaptiveValue("font-size", 36, 24);
+    line-height: 1.16;
+    color: $blue;
+  }
+}
+
+//Text
+[class*="__text"] {
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+
+
+//Logo
+.logo {
+  display: flex;
+  align-items: center;
+  gap: rem(11);
+}
